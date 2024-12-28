@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Varela+Round&display=swap');
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 5rem;
+    overflow-x: hidden;
+  }
+  
+  html::-webkit-scrollbar {
+    width: 0.5rem;
+    
+  }
+  
+  html::-webkit-scrollbar-track {
+    background: #001;
+  }
+  
+  html::-webkit-scrollbar-thumb {
+    background: #4a54cf;
+    border-radius: 20px;
+  }
+
+nav{
+    font-family: 'Ubuntu', sans-serif;
+    position: relative;
+    display: contents;
+    
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+    list-style-type: none;
+    height: 30px;
+    background-color: #000;
+    color: #fff;
+}
+
+nav ul li{
+    padding: 0 10px;
+}
+.brand img{
+    width: 44px;
+    padding: 0 8px;
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+.sidebar.close ~ .container{
+    left: 78px;
+    width: calc(100% - 78px);
+  }
+.container{
+    
+    background-color: #fff;
+    color: white;
+   font-family: 'Varela Round', sans-serif;
+   display: flex;
+   background-image: url('../bg.jpg');
+   flex-wrap: wrap;
+   position: relative;
+    height: 130vh;
+    left: 295px;
+    width: calc(100% - 295px);
+    transition: all 0.2s ease;
+}
+
+.bottom{
+    position: fixed;
+    bottom: 0;
+    height: 130px;
+    background-color: white;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; 
+    left: 300px;
+    width: calc(100% - 295px);
+    transition: all 0.2s ease;
+}
+.sidebar.close ~ .bottom{
+    left: 78px;
+    width: calc(100% - 78px);
+  }
+.icons{
+    margin-top: 14px; 
+}
+.icons i{
+    cursor: pointer;
+}
+
